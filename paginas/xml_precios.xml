@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<precios>
+        
+    <depto_1>
+        <precio></precio>
+        <titulo>una solución confortable</titulo>
+        <resumen>Habitación totalmente equipada tipo studio. Cuenta con 1 baño y cocina.</resumen>
+        <descripcion>Departamento pequeño tipo estudio, cuenta con cama Queen, cocina americana equipada, baño, balcón.</descripcion>
+    </depto_1>
+        
+    <depto_2>
+        <precio></precio>
+        <titulo>especial familia pequeña</titulo>
+        <resumen>Habitación totalmente equipada. Cuenta con 2 dormitorios 2 baños y cocina.</resumen>
+        <descripcion>Departamento con dos habitaciones más un área común (living/comedor). Una habitación cuenta con cama Queen y walk-in closet. la segunda habitación es pequeña con cama nido. Tiene un baño.</descripcion>
+    </depto_2>
+    
+    <depto_3>
+        <precio></precio>
+        <titulo>ideal para familia numerosa</titulo>
+        <resumen>Habitación totalmente equipada. Cuenta con 3 dormitorios 2 baños y cocina.</resumen>
+        <descripcion>Departamento con dos habitaciones más un área común (living/comedor). Una habitación cuenta con cama Queen y baño en suit. La segunda habitación es pequeña con cama nido. Tiene un baño extra.</descripcion>
+    </depto_3>
+    
+</precios>

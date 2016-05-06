@@ -1,0 +1,46 @@
+# BEGIN my rules
+
+#Directorio inicial
+#DirectoryIndex index.htm
+
+# ^ - Indica el principio de la palabra a buscar.
+# $ - Indica el final de la palabra a buscar.
+RewriteEngine On
+#           alias pagina$ nombre original
+
+#MENU
+RewriteRule ^sobre-nosotros$ ?m=about [L]
+RewriteRule ^contacto$ ?m=contacts [L]
+RewriteRule ^home$ ?m=home [L]
+#RewriteRule ^home_2$ ?m=home_2 [L]
+RewriteRule ^pisos$ ?m=rooms [L]
+#RewriteRule ^pisos_2$ ?m=rooms_2 [L]
+RewriteRule ^detalle_1$ ?m=room_detail_1 [L]
+RewriteRule ^detalle_2$ ?m=room_detail_2 [L]
+RewriteRule ^detalle_3$ ?m=room_detail_3 [L]
+RewriteRule ^gallery_col$ ?m=gallery_columns [L]
+
+#ARTICULOS
+
+# Para detener todos las alertas de errores de php 1/On  por defecto
+#php_flag display_errors 1
+
+# Directiva para establecer el nivel de error
+#1	E_ERROR (integer)	 Errores Fatales en tiempo de ejecución. Éstos indican errores que no se pueden recuperar, tales como un problema de asignación de memoria. La ejecución del script se interrumpe.	 
+#2	E_WARNING (integer)	 Advertencias en tiempo de ejecución (errores no fatales). La ejecución del script no se interrumpe.	 
+#4	E_PARSE (integer)	 Errores de análisis en tiempo de compilación. Los errores de análisis deberían ser generados únicamente por el analizador.	 
+#8	E_NOTICE (integer)	 Avisos en tiempo de ejecución. Indican que el script encontró algo que podría señalar un error, pero que también podría ocurrir en el curso normal al ejecutar un script.
+
+# Por defecto 7, errores y avisos normales, 
+#php_value error_reporting 7
+
+#ErrorDocument 404: "La pagina que ha solicitado no existe"
+ErrorDocument 404 http://css-tricks.com/thispagedoesntexist
+
+#AuthName "Directorio Protegido"
+#AuthUserFile /ruta/.htpasswd
+#AuthType basic
+#Require valid-user    "Directorio Protegido"
+
+# END
+
